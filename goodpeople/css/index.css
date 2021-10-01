@@ -434,7 +434,7 @@ ul.sponsor_list>li>a:hover {
 	overflow:auto;
 }
 .menu_mo_area.active .menu_mo_body {
-	right:0;
+	left:0;
 }
 .menu_mo_body .menu_mo_list {
 	margin-bottom:50px;
