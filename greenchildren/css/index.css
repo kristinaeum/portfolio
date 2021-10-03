@@ -161,6 +161,16 @@ h2{
     height: 100%;
     object-fit: cover;
 }
+
+.swiper-button-prev, .swiper-button-next{
+    color: #fff!important;
+}
+.swiper-pagination-bullet{
+    background-color: #fff!important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff!important;
+}
 /******************공통******************/
 /*전체 보기*/
 .moreview{
