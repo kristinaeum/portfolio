@@ -1,0 +1,370 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	border:0;
+    font-family: 'Noto Sans KR',sans-serif;
+    font-style: normal;
+	/*list-style:none;*/scroll-behavior: smooth
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height:1.2;
+}
+article,aside,figcaption,figure,footer,header,hgroup,main,nav,section,div {
+	display:block;
+}
+::before,::after {
+	box-sizing:border-box;
+}
+.blind {
+	visibility:hidden;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:0;
+	font-size:0;
+	line-height:0 /*display:none은 웹접근성에 어긋남*/
+}
+ul,li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a {display: block;
+	text-decoration:none;
+	color:#000;
+}
+body{
+    max-width:100%;
+	position:relative;
+	margin:0;
+    background-color: #f1e4de;
+    /*#EFEBE0;*/
+}
+h3{
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: -1px;
+}
+/*header*/
+header{
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    background-color: #f1e4de;
+}
+/*header_pc*/
+.menu_pc{
+    margin-top: 20px;
+}
+.menu_pc ul{
+    text-align: center;
+}
+.menu_pc ul li{
+    font-size: 30px;
+    display: inline-block;
+    width: calc(100%/5);
+    letter-spacing: 3px;
+}
+.menu_pc ul li a:hover{
+    font-weight: 500;
+    color: #dda894;
+    transition: all .15s linear;
+}
+/*header_mo*/
+.menu_mo_btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+.menu_mo_btn .mo_btn{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 19px;
+    background-color: #eb6100;
+    cursor: pointer;
+    z-index: 100;
+}
+.menu_mo_btn .mo_btn p{
+    text-indent: -9999px;
+}
+.menu_mo{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.menu_mo.active{
+	display:block;
+}
+.menu_mo_slide{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #144199;
+    transition: all .15s linear;
+
+}
+.menu_mo_slide ul{
+    right: 0;
+    text-align: center;
+}
+.menu_mo_slide li{
+    display:block;
+    font-size: 60px;
+    margin-top: 50px;
+}
+/*wrap*/
+section{
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 0;
+}
+section .inner{
+    width: 80%;
+    margin: auto;
+}
+.img_wrap{
+    display: inline-block;
+    width: 70%;
+}
+section .img_wrap img{
+    width: 100%;
+    height: 100%;
+}
+.content_wrap{
+    display: inline-block;
+    width: 30%;
+    padding-left: 50px;
+}
+.content_wrap h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.content_wrap h2 .po_num{
+    font-size: 40px;
+    color: #dda894;
+}
+.content_wrap .summary{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.content_wrap .point{
+    font-size: 20px;
+    color: #c09383;
+    margin-top: 10px;
+}
+.content_wrap .point span{
+    margin-right: 15px;
+}
+.content_wrap .percent{
+    font-size: 22px;
+    color: #3a3332;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.content_wrap .percent span{
+    font-weight: 500;
+}
+.content_wrap .btn_area{
+    margin-top: 20px;
+}
+.content_wrap .btn_area a{
+    display: inline-block;
+    font-size: 18px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #dda894;
+    text-align: center;
+    padding: 5px 0;
+    transition: all .2s ease;
+}
+.content_wrap .btn_area a:hover{
+    background-color: #ddbfb4;
+}
+/*home*/
+h1{
+    font-size: 60px;
+}
+h1 .line{
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    background: #000;
+    margin-bottom: 15px;
+}
+h1 .h1_bottom{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+/*work*/
+.process{
+    margin-left: 20px;
+}
+/*about*/
+.about .about_cont{
+    margin-top: 100px;
+}
+.about .inner .about_img{
+    display: inline-block;
+}
+.about .inner .about_img img{
+    width: 270px;
+}
+.about .inner .about_text{
+    top: 0;
+    display: inline-block;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+.about .inner .about_text p{
+    font-size: 18px;
+    line-height: 55px;
+}
+.about .inner .about_text p b{
+    display: inline-block;
+    width: 130px;
+    vertical-align: top;
+}
+.about .inner .about_text p span{
+    display: inline-block;
+    letter-spacing: normal;
+}
+/*contact*/
+.contact .inner ul{
+    margin-top: 120px;
+    font-size: 20px;
+    text-align: center;
+}
+.contact .inner ul li span{
+    font-weight: 700;
+    cursor: text;
+}
+.contact .inner ul li b{
+    font-weight: normal;
+}
+.contact .inner ul li b:hover{
+    color: #dda894;
+    transition: all .15s linear;
+}
+.contact .inner ul li:nth-child(2) {
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    h3{
+        font-size: 38px;
+    }
+    /*section*/
+    section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .content_wrap{
+        padding-left: 30px;
+    }
+    .content_wrap .summary{
+        font-size: 28px;
+    }
+    /*about*/
+    .about .about_cont{
+        margin-top: 70px;
+    }
+    .about .inner .about_text p{
+        font-size: 15px;
+    }
+    .about .inner .about_img{
+        display: block;
+        text-align: center;
+    }
+    .about .inner .about_img img{
+        width: 200px;
+    }
+    .about .inner .about_text{
+        display: block;
+        margin-left: 0;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 2px solid #000;
+    }
+    /*contact*/
+    .contact{
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width:1024px) {
+    /*header*/
+    .menu_pc ul li{
+        font-size: 25px;
+    }
+    /*section*/
+    section .inner{
+        width: 90%;
+    }
+}
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 40px;
+    }
+    /*header*/
+    .menu_pc{
+        margin-bottom: 10px;
+    }
+    .menu_pc ul li{
+        font-size: 13px;
+        width: calc(100%/4);
+    }
+    /*home*/
+    .home{
+        padding-top: 250px;
+        height: 100vh;
+    }
+    /*section*/
+    section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    /*about*/
+    .about .inner .about_text p{
+        line-height: 40px;
+    }
+    .about .inner .about_text p b{
+        font-size: 17px;
+    }
+    .img_wrap{
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .content_wrap{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .about .inner .about_text p span{
+        display: block;
+    }
+}
+@media screen and (max-width:480px) {
+    .content_wrap .summary{
+        font-size: 30px;
+    }
+}
+
+
